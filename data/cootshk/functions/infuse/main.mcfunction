@@ -26,5 +26,7 @@ execute as @a run scoreboard players reset @s ResetInfuse
 execute as @a[gamemode=creative] run scoreboard players enable @s ResetInfuse
 
 # Drain command
+execute as @a run function cootshk:infuse/count_effects
 execute as @a if score @s PotionCount matches 1.. run scoreboard players enable @s DrainPotion
 execute as @a if score @s DrainPotion matches 1.. run function cootshk:infuse/drain
+execute as @a if score @s PotionCount matches ..0 run scoreboard players reset @s DrainPotion
