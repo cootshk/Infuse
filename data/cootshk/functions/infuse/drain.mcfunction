@@ -1,3 +1,4 @@
+scoreboard players set @s DrainPotion 0
 function cootshk:infuse/count_effects
 execute unless score @s PotionCount matches 1.. run tellraw @s [{"text": "[", "color": "gold"}, {"text": "Infuse", "color": "dark_aqua"}, {"text": "] ", "color": "gold"}, {"text": "You must have a positive number of potion effects applied to drain an effect!", "color": "dark_red"}]
 execute unless score @s PotionCount matches 1.. run return 1

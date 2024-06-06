@@ -20,6 +20,11 @@ execute as @a if score @s InfuseResetCounter < Total_Reset_Count InfuseSettings 
 # Grant effects
 execute as @a run function cootshk:infuse/give_effects
 
+# Reset command
 execute as @a if score @s ResetInfuse matches 1 run function cootshk:infuse/reset_effects
 execute as @a run scoreboard players reset @s ResetInfuse
 execute as @a[gamemode=creative] run scoreboard players enable @s ResetInfuse
+
+# Drain command
+execute as @a if score @s PotionCount matches 1.. run scoreboard players enable @s DrainPotion
+execute as @a if score @s DrainPotion matches 1.. run function cootshk:infuse/drain
