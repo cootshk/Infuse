@@ -1,0 +1,1 @@
+scoreboard players add Total_Reset_Count InfuseSettings 1

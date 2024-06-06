@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:stone"
+        },
+        "title": "death",
+        "description": "bad job"
+    },
+    "parent": "cootshk:infuse",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "sends_telemetry_event": false
+}
