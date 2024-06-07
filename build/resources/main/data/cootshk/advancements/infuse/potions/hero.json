@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:potion"
+                    ],
+                    "nbt": "{\"CustomModelData\":2}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "cootshk:infuse/potions/hero"
+    },
+    "sends_telemetry_event": false
+}

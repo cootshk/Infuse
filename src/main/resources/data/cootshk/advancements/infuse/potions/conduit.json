@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:potion"
+                    ],
+                    "nbt": "{\"CustomModelData\":4}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "cootshk:infuse/potions/conduit"
+    },
+    "sends_telemetry_event": false
+}
