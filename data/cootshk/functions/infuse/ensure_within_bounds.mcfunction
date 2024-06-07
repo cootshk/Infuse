@@ -1,3 +1,0 @@
-execute as @a unless score @s PotionCount matches -2147483648..2147483647 run scoreboard players set @s PotionCount 0
-execute unless score Total_Reset_Count InfuseSettings matches -2147483648..2147483647 run scoreboard players set Total_Reset_Count InfuseResetCounter 0
-execute as @a unless score @s InfuseResetCounter matches -2147483648..2147483647 store result score @s InfuseResetCounter run scoreboard players get Total_Reset_Count InfuseSettings

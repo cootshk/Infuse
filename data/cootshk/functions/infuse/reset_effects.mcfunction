@@ -1,2 +1,0 @@
-tellraw @s [{"text":"[","color":"gold"},{"text":"Infuse","color":"dark_aqua"},{"text":"] ","color":"gold"},{"text":"Resetting all effects...","color":"dark_red"}]
-scoreboard players add Total_Reset_Count InfuseSettings 1
