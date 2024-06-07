@@ -11,7 +11,7 @@ scoreboard players set @s Falling 0
 scoreboard players set @s Jump 0
 scoreboard players set @s Mining 0
 scoreboard players set @s Hunger 0
-scoreboard players set @s Blindness 0
+scoreboard players set @s Glowing 0
 scoreboard players set @s Weakness 0
 
 execute store result score @s InfuseResetCounter run scoreboard players get Total_Reset_Count InfuseSettings

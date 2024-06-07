@@ -26,7 +26,7 @@ scoreboard objectives add Falling dummy
 scoreboard objectives add Jump dummy
 scoreboard objectives add Mining dummy
 scoreboard objectives add Hunger dummy
-scoreboard objectives add Darkness dummy
+scoreboard objectives add Glowing dummy
 scoreboard objectives add Weakness dummy
 
 # Set on every tick

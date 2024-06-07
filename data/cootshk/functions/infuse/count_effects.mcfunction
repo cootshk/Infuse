@@ -12,7 +12,7 @@ execute if score @s Falling matches 1 run scoreboard players remove @s PotionCou
 execute if score @s Jump matches 1 run scoreboard players remove @s PotionCount 1
 execute if score @s Mining matches 1 run scoreboard players remove @s PotionCount 1
 execute if score @s Hunger matches 1 run scoreboard players remove @s PotionCount 1
-execute if score @s Darkness matches 1 run scoreboard players remove @s PotionCount 1
+execute if score @s Glowing matches 1 run scoreboard players remove @s PotionCount 1
 execute if score @s Weakness matches 1 run scoreboard players remove @s PotionCount 1
 
 execute if score DEBUG InfuseSettings matches 1 run tellraw @s [{"text":"You had ","color":"white"},{"score":{"name":"@s","objective":"PotionCount"}},{"text":" effects applied before this one.","color":"white"}]
