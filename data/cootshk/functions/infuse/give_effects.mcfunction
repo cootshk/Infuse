@@ -12,5 +12,5 @@ execute if score @s Falling matches 1 run effect give @s minecraft:slow_falling 
 execute if score @s Jump matches 1 run effect give @s minecraft:jump_boost 1 0 true
 execute if score @s Mining matches 1 run effect give @s minecraft:mining_fatigue 1 0 true
 execute if score @s Hunger matches 1 run effect give @s minecraft:hunger 1 0 true
-execute if score @s Darkness matches 1 run effect give @s minecraft:darkness 5 0 true
+execute if score @s Darkness matches 1 run effect give @s minecraft:glowing 5 0 true
 execute if score @s Weakness matches 1 run effect give @s minecraft:weakness 1 0 true
