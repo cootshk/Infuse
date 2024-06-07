@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:potion"
+                    ],
+                    "nbt": "{\"CustomModelData\":100}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "cootshk:infuse/potions/good_potion"
+    },
+    "sends_telemetry_event": false
+}
