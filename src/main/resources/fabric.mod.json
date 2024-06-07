@@ -1,6 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "infuse",
+  "provides": [
+    "infusecommands"
+  ],
   "version": "${version}",
   "name": "Infuse",
   "description": "Simple recreation of the Infuse plugin for Fabric",
@@ -9,7 +12,8 @@
   ],
   "contact": {
     "website": "cootshk.github.io",
-    "repo": "https://github.com/cootshk/Infuse"
+    "repo": "https://github.com/cootshk/Infuse",
+    "issues": "https://github.com/cootshk/Infuse/issues"
   },
   "license": "GPL-3.0",
   "icon": "assets/infusecommands/icon.png",
@@ -23,5 +27,10 @@
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}"
-  }
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/fabric-api-0.97.1+1.20.4.jar"
+    }
+  ]
 }
