@@ -3,7 +3,7 @@ execute store result score @s HasPotion run function cootshk:infuse/effects/has_
 # If effect is already applied, reroll
 execute if score @s HasPotion matches 0 run scoreboard players add @s CurrentPotion 1
 execute if score @s HasPotion matches 0 if score @s CurrentPotion matches 8 run scoreboard players set @s CurrentPotion 1
-execute if score @s HasPotion matches 0 run function cootshk:infuse/effects/remove_pos
+execute if score @s HasPotion matches 0 run return run function cootshk:infuse/effects/remove_pos
 
 execute if score @s CurrentPotion matches 1 run scoreboard players set @s Speed 0
 execute if score @s CurrentPotion matches 1 run tellraw @s [{"text":"[","color":"gold"},{"text":"Infuse","color":"dark_aqua"},{"text":"] ","color":"gold"},{"text":"You have lost the Speed effect!","color":"red"}]

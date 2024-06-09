@@ -3,7 +3,7 @@ execute if score @s PotionCount matches ..-7 run return 1
 # If effect is already applied, reroll
 execute if score @s HasPotion matches 1 run scoreboard players add @s CurrentPotion 1
 execute if score @s HasPotion matches 1 if score @s CurrentPotion matches 8 run scoreboard players set @s CurrentPotion 1
-execute if score @s HasPotion matches 1 run function cootshk:infuse/effects/add_neg
+execute if score @s HasPotion matches 1 run return run function cootshk:infuse/effects/add_neg
 
 execute if score @s CurrentPotion matches 1 run scoreboard players set @s Slowness 1
 execute if score @s CurrentPotion matches 1 run tellraw @s [{"text":"[","color":"gold"},{"text":"Infuse","color":"dark_aqua"},{"text":"] ","color":"gold"},{"text":"You have gained the Slowness effect!","color":"red"}]
